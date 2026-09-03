@@ -1,5 +1,5 @@
 // Reusable Component: "Next time, try this combo" with Itemized Breakdown & Savings
-import { getComboStats } from '../data/combos.js';
+import { FEATURED_COMBOS, getComboStats } from '../data/combos.js';
 import { cartStore } from '../state/cartStore.js';
 
 export function renderComboCardHtml(combo) {
@@ -130,24 +130,20 @@ export function bindComboCardEvents(container, onUpdate) {
       if (isAdded) {
         cartStore.removeItem(comboId);
       } else {
-        import('../data/combos.js').then(({ FEATURED_COMBOS, getComboStats }) => {
-          const combo = FEATURED_COMBOS.find(c => c.id === comboId);
-          if (combo) {
-            const stats = getComboStats(combo);
-            cartStore.addItem({
-              id: combo.id,
-              name: combo.title,
-              unit: `${combo.items.length} items bundled`,
-              price: stats.comboPrice,
-              originalPrice: stats.singleTotal,
-              category: 'Combos',
-              image: combo.image,
-              isCombo: true
-            });
-            if (onUpdate) onUpdate();
-          }
-        });
-        return;
+        const combo = FEATURED_COMBOS.find(c => c.id === comboId);
+        if (combo) {
+          const stats = getComboStats(combo);
+          cartStore.addItem({
+            id: combo.id,
+            name: combo.title,
+            unit: `${combo.items.length} items bundled`,
+            price: stats.comboPrice,
+            originalPrice: stats.singleTotal,
+            category: 'Combos',
+            image: combo.image,
+            isCombo: true
+          });
+        }
       }
 
       if (onUpdate) onUpdate();
