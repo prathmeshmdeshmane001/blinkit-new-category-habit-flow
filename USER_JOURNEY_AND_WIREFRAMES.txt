@@ -1,0 +1,514 @@
+================================================================================
+          BLINKIT: NEW-CATEGORY HABIT FLOW & DISCOVERY PROTOTYPE
+                  USER JOURNEY & ASCII WIREFRAMES SPECIFICATION
+================================================================================
+Version: 1.0.0
+Author: Product & Design Team
+Platform: Mobile Quick-Commerce (iPhone 17 Form Factor - 402 x 874 pt)
+Architecture: Vanilla Modern ESM + Tailwind CSS + Vite 5 + Netlify SPA
+
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. EXECUTIVE SUMMARY & PROBLEM STATEMENT
+2. USER PERSONA & BEHAVIORAL HYPOTHESIS
+3. END-TO-END USER JOURNEY MAP (7 STAGES)
+4. DETAILED ASCII WIREFRAMES:
+   4.1 SCREEN 1: HOME FEED (BANGER COMBOS & DISCOVERY NUDGES)
+   4.2 SCREEN 2: NATIVE CATEGORY GRID (4-COLUMN BLINKIT LAYOUT)
+   4.3 SCREEN 3: BANGER COMBO BOTTOM SHEET MODAL (TRANSPARENT MATH)
+   4.4 SCREEN 4: MY CART & ROUTINE COMBO SWITCHER
+   4.5 SCREEN 5: LIVE ORDER TRACKING & HABIT PROGRESS LOOP
+   4.6 SCREEN 6: "NEW ON BLINKIT" (UNDERGARMENTS & APPAREL AISLE)
+5. HABIT FORMATION & RETENTION METRICS (KPIs)
+
+
+================================================================================
+1. EXECUTIVE SUMMARY & PROBLEM STATEMENT
+================================================================================
+Problem Statement:
+Blinkit users display extreme frequency (3-5 orders/week) for high-frequency,
+low-margin replenishment categories (milk, bread, onions, coriander). However,
+they rarely cross over into high-margin lifestyle categories (Apparel/Innerwear,
+Beauty & Skincare, WFH Electronics, OTC Wellness) due to:
+  1. Fit & sizing anxiety for apparel.
+  2. Perceived price inflation on quick commerce for non-grocery goods.
+  3. Search-driven mental model (users search for "milk" and immediately check out).
+  4. Decision fatigue when choosing standalone unfamiliar brand items.
+
+Solution Hypothesis:
+By introducing "Banger Combos" (curated routine bundles with transparent
+mathematical proof of savings), risk-free doorstep size replacements, and an
+ambient "New on Blinkit" exploration loop, users are guided from high-frequency
+grocery replenishment into repeat discovery habits.
+
+
+================================================================================
+2. USER PERSONA & BEHAVIORAL HYPOTHESIS
+================================================================================
+Primary Persona:
+  - Name: Priya Sharma
+  - Age: 28
+  - Occupation: Senior Software Engineer, Koramangala, Bengaluru
+  - Blinkit Usage: 3-4 orders/week (primarily vegetables, curd, milk, bread)
+  - Pain Point: Wants quality basics and routine supplies quickly, but doubts 
+    quick commerce for apparel fit and non-grocery item authenticity.
+  - Motivation: Save time, avoid grocery run exhaustion, and get transparent value.
+
+
+================================================================================
+3. END-TO-END USER JOURNEY MAP
+================================================================================
+
++-------------------------------------------------------------------------------+
+| STAGE 1: TRIGGER & APP LAUNCH                                                 |
++-------------------------------------------------------------------------------+
+| User Action:    Priya needs potatoes and onions for dinner. Opens Blinkit.    |
+| Screen:         Screen 1: Home Feed                                           |
+| Emotion/Mindset:"I need dinner veggies fast; let me buy and leave."           |
+| UX Touchpoint:  - Dynamic Island displaying "⚡ 12m" live warehouse packing.  |
+|                 - Delivery header: "Blinkit in 12 mins • Home - Koramangala". |
+|                 - First-time discovery coupon banner: "Beauty & Apparel".     |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+| STAGE 2: AMBIENT DISCOVERY & THE "BANGER COMBOS" HOOK                         |
++-------------------------------------------------------------------------------+
+| User Action:    While adding potatoes (₹26) to cart, her attention is caught  |
+|                 by the "🔥 Banger Combos (Up to 31% OFF)" carousel.           |
+| Screen:         Screen 1: Home Feed (Mid-scroll)                              |
+| Emotion/Mindset:"Wait, Pasta Night Routine Combo? What's inside?"             |
+| UX Touchpoint:  - Real photographic hero card of gourmet cooked pasta.        |
+|                 - Tags: "3 items inside", "15 mins prep", "Save ₹76".         |
+|                 - Category filter chips: All, Clothing, Beauty, Tech, Fitness.|
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+| STAGE 3: VALUE VERIFICATION & TRANSPARENT MATH PROOF                          |
++-------------------------------------------------------------------------------+
+| User Action:    Taps "View Details" on the Pasta Night Combo.                 |
+| Screen:         Screen 10: iOS Bottom Sheet Modal                             |
+| Emotion/Mindset:"Is this actually cheaper than buying separately?"            |
+| UX Touchpoint:  - iOS Bottom Sheet slides smoothly into view.                 |
+|                 - Itemized breakdown:                                         |
+|                   * Borges Penne Rigate (500g): ₹95                           |
+|                   * Barilla Arrabiata Sauce (400g): ₹115                      |
+|                   * Dlecta Grated Parmesan Cheese (80g): ₹55                  |
+|                 - Mathematical Proof Box:                                     |
+|                   Sum of standalone items: ₹265                               |
+|                   Banger Combo price:      ₹189                               |
+|                   Total Money Saved:       ₹76 (29% OFF)                      |
+|                 - CTA: "+ Add Banger Combo (₹189)".                           |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+| STAGE 4: EXPLORING UNTRIED AISLES ("NEW ON BLINKIT ↗")                       |
++-------------------------------------------------------------------------------+
+| User Action:    Notices the glowing purple "New on Blinkit ↗" bottom tab      |
+|                 and taps it to see what else has launched.                    |
+| Screen:         Screen 8: New on Blinkit Screen                               |
+| Emotion/Mindset:"They have undergarments and clothing now?"                   |
+| UX Touchpoint:  - "Undergarments & Clothing Basics" section with Jockey,      |
+|                   XYXX modal trunks, Amante bralettes, and Puma socks.        |
+|                 - "100% Fit Guarantee": 7-Day Free Doorstep Size Replacement  |
+|                   removes fit anxiety completely.                             |
+|                 - Taps "ADD" on Puma Cushioned Ankle Socks (Pack of 3, ₹199). |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+| STAGE 5: FRICTIONLESS CART & COMBO CONFIRMATION                               |
++-------------------------------------------------------------------------------+
+| User Action:    Taps floating green Cart bar. Enters My Cart.                 |
+| Screen:         Screen 4: My Cart Screen                                      |
+| Emotion/Mindset:"Everything I need in one cart; great bundled discounts."     |
+| UX Touchpoint:  - Cart contains: Veggies + Pasta Night Combo + Puma Socks.    |
+|                 - "Curated Routine Combos" switcher pill lets user toggle     |
+|                   between Pasta Night, Tech Pack, and Protein Cookies.        |
+|                 - Transparent bill breakdown showing total savings of ₹105.   |
+|                 - Single green CTA: "Select Address & Pay ➔".                 |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+| STAGE 6: CHECKOUT & RISK-FREE ASSURANCE                                       |
++-------------------------------------------------------------------------------+
+| User Action:    Selects address, chooses UPI / Cards, reviews order.          |
+| Screen:         Screen 5 & 6: Address & Payment                               |
+| Emotion/Mindset:"Guaranteed delivery in 12 mins or money back."               |
+| UX Touchpoint:  - Prominent "100% Risk-Free Trial Guarantee" badge.           |
+|                 - One-tap payment via Apple Pay / UPI / NetBanking.           |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+| STAGE 7: POST-ORDER HABIT FORMATION & LOOP ACTIVATION                         |
++-------------------------------------------------------------------------------+
+| User Action:    Observes live GPS tracking of delivery rider on map.          |
+| Screen:         Screen 7: Live Delivery Tracking                              |
+| Emotion/Mindset:"Wow, delivery in 11 minutes! I earned habit progress too!"   |
+| UX Touchpoint:  - Simulated GPS rider moving toward home address.             |
+|                 - Habit Tracker: "Monthly Explorer: 2 of 2 untried aisles     |
+|                   completed! 🏆 Earned ₹50 Blinkit credits."                  |
+|                 - "Next time, try this combo": Recommends Morning Fresh       |
+|                   Breakfast Combo for tomorrow morning.                       |
++-------------------------------------------------------------------------------+
+
+
+================================================================================
+4. DETAILED ASCII WIREFRAMES
+================================================================================
+
+--------------------------------------------------------------------------------
+4.1 SCREEN 1: HOME FEED (BANGER COMBOS & DISCOVERY NUDGES)
+Route: #/home
+--------------------------------------------------------------------------------
+
++---------------------------------------------------+
+|  09:41           [ ⚡ 12m  (●) ]         4G  [|||] | <- Dynamic Island
++---------------------------------------------------+
+|  blinkit      Blinkit in 12 mins (●)          [👤] |
+|               Home - Koramangala, Bengaluru v     |
+|                                                   |
+|  [ 🔍  Search 'pasta combo', 'first aid'...    🎤 ] |
++---------------------------------------------------+
+|  +---------------------------------------------+  |
+|  | FIRST TIME OFFER  ✨ Beauty Special     [x] |  |
+|  | First time in Beauty this month?            |  |
+|  | Get 15% off + easy returns on orders >₹300. |  |
+|  | [ Claim Offer > ]               (i) T&C     |  |
+|  +---------------------------------------------+  |
++---------------------------------------------------+
+|  EXPLORE AISLES                 All Categories >  |
+|  +--------+   +--------+   +--------+   +--------+|
+|  |   🍳   |   |   💄   |   |   🥔   |   |   🛡️   ||
+|  |Kitchen |   | Beauty |   |Veggies |   |Guarant.||
+|  +--------+   +--------+   +--------+   +--------+|
++---------------------------------------------------+
+|  🔥 BANGER COMBOS                 [🔥 Up to 31% OFF] |
+|  Curated high-savings bundles. Tap to view math!  |
+|                                                   |
+|  (All) (Clothing) (Beauty) (Medicine) (Tech) (Fit)|
+|                                                   |
+|  +---------------------+   +---------------------+|
+|  | [29% OFF]           |   | [30% OFF]           | |
+|  | [ REAL PHOTO:       |   | [ REAL PHOTO:       | |
+|  |   Plated Pasta ]    |   |   Cotton Trunks ]   | |
+|  | (3 items) (15 mins) |   | (3 items) (8m disp) | |
+|  | Pasta Night Routine |   | Fresh Cotton Inwear | |
+|  | ₹189  ~~₹265~~      |   | ₹489  ~~₹697~~      | |
+|  | Save ₹76            |   | Save ₹208           | |
+|  | [ View Details ]    |   | [ View Details ]    | |
+|  +---------------------+   +---------------------+|
++---------------------------------------------------+
+|  BESTSELLERS                               see all|
+|  +-------------+  +-------------+  +-------------+|
+|  | Potato 1kg  |  | Tomato 500g |  | Milk 1L     ||
+|  | ₹26   [ADD] |  | ₹22   [ADD] |  | ₹32   [ADD] ||
+|  +-------------+  +-------------+  +-------------+|
++---------------------------------------------------+
+|  ===============================================  |
+|  | [3]  ₹106 • Saved ₹29 • 8 mins  [View Cart >]| | <- Sticky Cart Bar
+|  ===============================================  |
++---------------------------------------------------+
+|    🏠        🛍️          🔲        🛒    (✨New↗) | <- Bottom Navigation
+|   Home   Order Again  Category    Cart   District |
++---------------------------------------------------+
+
+
+--------------------------------------------------------------------------------
+4.2 SCREEN 2: NATIVE CATEGORY GRID (4-COLUMN BLINKIT LAYOUT)
+Route: #/category (Styled directly to native reference screenshot)
+--------------------------------------------------------------------------------
+
++---------------------------------------------------+
+|  09:41           [ ⚡ 12m  (●) ]         4G  [|||] |
++---------------------------------------------------+
+|  WARM AMBER / GOLDEN GLOW HEADER                  |
+|  Blinkit in                                       |
+|  20 minutes (●)                  [💵 ₹0]    [👤]  |
+|  HOME - Gandhi bhavan v                           |
+|                                                   |
+|  [ 🔍  Search 'milk', 'chips', or 'atta'       🎤 ] |
++---------------------------------------------------+
+|  GROCERY & KITCHEN                                |
+|                                                   |
+|  +--------+   +--------+   +--------+   +--------+|
+|  | [IMG]  |   | [IMG]  |   | [IMG]  |   | [IMG]  ||
+|  |Vegetabl|   | Atta,  |   |  Oil,  |   | Dairy, ||
+|  |& Fruits|   |Rice/Dal|   | Masala |   | Bread  ||
+|  +--------+   +--------+   +--------+   +--------+|
+|                                                   |
+|  +--------+   +--------+   +--------+   +--------+|
+|  | [IMG]  |   | [IMG]  |   | [IMG]  |   | [IMG]  ||
+|  | Bakery |   |  Dry   |   | Chicken|   |Kitchen-||
+|  |Biscuits|   | Fruits |   |  Meat  |   |  ware  ||
+|  +--------+   +--------+   +--------+   +--------+|
++---------------------------------------------------+
+|  SNACKS & DRINKS                                  |
+|                                                   |
+|  +--------+   +--------+   +--------+   +--------+|
+|  | [IMG]  |   | [IMG]  |   | [IMG]  |   | [IMG]  ||
+|  | Chips  |   | Sweets |   | Drinks |   |  Tea   ||
+|  |Namkeen |   |Chocola.|   | Juices |   | Coffee ||
+|  +--------+   +--------+   +--------+   +--------+|
+|                                                   |
+|  +--------+   +--------+   +--------+   +--------+|
+|  | [IMG]  |   | [IMG]  |   | [IMG]  |   | [IMG]  ||
+|  |Instant |   | Sauces |   | Beauty |   | Pharma ||
+|  |  Food  |   |Spreads |   |  Care  |   |Wellness||
+|  +--------+   +--------+   +--------+   +--------+|
++---------------------------------------------------+
+|  +-----------------------------------------------+|
+|  | ✨ NEW ON BLINKIT                             ||
+|  | Explore New Items & Aisles                    ||
+|  | Brand launches, trial packs & apparel basics. ||
+|  | [ Explore New Items -> ]                      ||
+|  +-----------------------------------------------+|
++---------------------------------------------------+
+|    🏠        🛍️          🔲        🛒    (✨New↗) |
+|   Home   Order Again  Category    Cart   District |
++---------------------------------------------------+
+
+
+--------------------------------------------------------------------------------
+4.3 SCREEN 3: BANGER COMBO BOTTOM SHEET MODAL (TRANSPARENT MATH)
+Trigger: Tap any combo card on Home, Cart, or Tracking
+--------------------------------------------------------------------------------
+
++---------------------------------------------------+
+| [ BACKDROP OVERLAY (Darkened Semi-Transparent) ]  |
+|                                                   |
+|  +---------------------------------------------+  |
+|  |                 ==== HANDLE ===             |  |
+|  |                                             |  |
+|  | [29% OFF]  [🔥 BANGER COMBO]                |  |
+|  | +-----------------------------------------+ |  |
+|  | |                                         | |  |
+|  | |   REAL PHOTO: Custom Plated Pasta       | |  |
+|  | |                                         | |  |
+|  | | (⏱️ 15 mins) (👥 2 people) [Blinkit Verif] | |  |
+|  | +-----------------------------------------+ |  |
+|  |                                             |  |
+|  | Pasta Night Routine Combo                   |  |
+|  | Authentic Italian dinner for 2 with pasta,  |  |
+|  | rich arrabiata sauce & parmesan cheese.     |  |
+|  |                                             |  |
+|  | +-----------------------------------------+ |  |
+|  | | 🛒 You save ₹76 on this combo!          | |  |
+|  | | Single items: ₹265 -> Combo price: ₹189  | |  |
+|  | +-----------------------------------------+ |  |
+|  |                                             |  |
+|  | ITEMS PRESENT IN COMBO (3 ITEMS)            |  |
+|  |                                             |  |
+|  | [IMG] Borges Durum Wheat Penne Rigate       |  |
+|  |       500g • Single item: ₹95               |  |
+|  |                                             |  |
+|  | [IMG] Barilla Classic Arrabiata Sauce       |  |
+|  |       400g • Single item: ₹115              |  |
+|  |                                             |  |
+|  | [IMG] Dlecta Grated Parmesan Cheese         |  |
+|  |       80g • Single item: ₹55                |  |
+|  |                                             |  |
+|  | TRANSPARENT MATH PROOF BOX:                 |  |
+|  | +-----------------------------------------+ |  |
+|  | | Sum of individual items:           ₹265 | |  |
+|  | | Special Banger Combo price:        ₹189 | |  |
+|  | | --------------------------------------- | |  |
+|  | | 🔥 Your Net Savings:      ₹76 (29% OFF) | |  |
+|  | +-----------------------------------------+ |  |
+|  |                                             |  |
+|  | 🛡️ Backed by 100% Risk-Free Guarantee &     |  |
+|  |    12-min delivery promise.                 |  |
+|  |                                             |  |
+|  | [ ======================================= ] |  |
+|  | [   🛒  + Add Banger Combo (₹189)         ] |  |
+|  | [ ======================================= ] |  |
+|  +---------------------------------------------+  |
++---------------------------------------------------+
+
+
+--------------------------------------------------------------------------------
+4.4 SCREEN 4: MY CART & ROUTINE COMBO SWITCHER
+Route: #/cart
+--------------------------------------------------------------------------------
+
++---------------------------------------------------+
+|  09:41           [ ⚡ 12m  (●) ]         4G  [|||] |
++---------------------------------------------------+
+|  [<-]  My Cart (3 items)                       (?) |
+|        ⚡ Instant dispatch guaranteed              |
++---------------------------------------------------+
+|  [!] 1 item unavailable                            |
+|      Replaced with fresh alternative     [Dismiss]|
++---------------------------------------------------+
+|  🌿 Your total savings: ₹29            [APPLIED]  |
++---------------------------------------------------+
+|  ⏱️ Delivery in 8 minutes                          |
+|                                                   |
+|  [IMG]  Potato (Alugadde) - 1kg         [-] 1 [+] |
+|         ₹26  ~~₹33~~                              |
+|                                                   |
+|  [IMG]  Onion (Eerulli) - 1kg           [-] 2 [+] |
+|         ₹39  ~~₹50~~                              |
++---------------------------------------------------+
+|  CURATED ROUTINE COMBOS FOR YOU       Bundle&Save |
+|                                                   |
+|  [🍝 Pasta Night]  (⚡ Tech Pack)  (🍪 Protein Bar)|
+|                                                   |
+|  +-----------------------------------------------+|
+|  | [🔥 BANGER COMBO]                    [29% OFF]||
+|  | Pasta Night Routine Combo           ₹189 ~~265||
+|  | Save ₹76 on this combo                         ||
+|  | 3 items: Borges Penne + Barilla + Dlecta       ||
+|  | [ + Add Banger Combo (₹189) ]                 ||
+|  +-----------------------------------------------+|
++---------------------------------------------------+
+|  BILL DETAILS                     Best Price Guar.|
+|  Item total:                              ₹104    |
+|  Handling charge:                           ₹2    |
+|  Delivery partner fee:                    FREE    |
+|  Grand Total:                             ₹106    |
+|  Total Savings:                            ₹29    |
++---------------------------------------------------+
+|  CANCELLATION POLICY                              |
+|  100% refund if delayed > 25 mins or unsatisfied. |
++---------------------------------------------------+
+|  ===============================================  |
+|  TOTAL: ₹106      [ Select Address & Pay -> ]     |
+|  ===============================================  |
++---------------------------------------------------+
+|    🏠        🛍️          🔲        🛒    (✨New↗) |
+|   Home   Order Again  Category    Cart   District |
++---------------------------------------------------+
+
+
+--------------------------------------------------------------------------------
+4.5 SCREEN 5: LIVE ORDER TRACKING & HABIT PROGRESS LOOP
+Route: #/tracking
+--------------------------------------------------------------------------------
+
++---------------------------------------------------+
+|  09:41           [ ⚡ 11m  (●) ]         4G  [|||] |
++---------------------------------------------------+
+|  [<-]  blinkit                             [Call] |
++---------------------------------------------------+
+|  +-----------------------------------------------+|
+|  |  SIMULATED GPS MAP VIEW                       ||
+|  |                                               ||
+|  |      [Store Hub] -----\                       ||
+|  |                        \--- [🛵 Rider: Ramesh]||
+|  |                                   |           ||
+|  |                              [📍 Home]        ||
+|  |                                               ||
+|  |  🛵 Arriving in 11 mins • On the way          ||
+|  +-----------------------------------------------+|
++---------------------------------------------------+
+|  RIDER DETAILS                                    |
+|  [👤] Ramesh Kumar (Vaccinated • 4.9 ★)   [📞 Call]|
+|       Vehicle: KA-01-EQ-9812                      |
++---------------------------------------------------+
+|  HABIT STREAK PROGRESS                            |
+|  +-----------------------------------------------+|
+|  | 🏆 Monthly Category Explorer                  ||
+|  | 2 of 2 unexplored aisles ordered this month!   ||
+|  | [████████████████████████████████] 100% Done   ||
+|  | 🎉 Reward unlocked: ₹50 Blinkit cash credited! ||
+|  +-----------------------------------------------+|
++---------------------------------------------------+
+|  NEXT TIME, TRY THIS COMBO            Recommended |
+|  +-----------------------------------------------+|
+|  | [🌅 Morning Fresh Breakfast Combo]   [27% OFF]||
+|  | Amul Taaza Milk (1L) + Brown Eggs (6) +        ||
+|  | Whole Wheat Bread (400g) + Cornflakes (250g)   ||
+|  | Standalone: ₹255 -> Combo Price: ₹185 (Save 70)||
+|  | [ + Add to Next Order ]                       ||
+|  +-----------------------------------------------+|
++---------------------------------------------------+
+|    🏠        🛍️          🔲        🛒    (✨New↗) |
+|   Home   Order Again  Category    Cart   District |
++---------------------------------------------------+
+
+
+--------------------------------------------------------------------------------
+4.6 SCREEN 6: "NEW ON BLINKIT" (UNDERGARMENTS & APPAREL AISLE)
+Route: #/new-for-you
+--------------------------------------------------------------------------------
+
++---------------------------------------------------+
+|  09:41           [ ⚡ 12m  (●) ]         4G  [|||] |
++---------------------------------------------------+
+|  [<-]  blinkit  New on Blinkit    [AISLE DISCOVERY]|
++---------------------------------------------------+
+|  ⚡ BLINKIT IN 12 MINUTES                         |
+|  Home · Gandhi bhavan, Koramangala Hub            |
++---------------------------------------------------+
+|  +-----------------------------------------------+|
+|  | ✨ NEW LAUNCHES ON BLINKIT                     ||
+|  | Explore Fresh Categories                      ||
+|  | Undergarments, apparel basics, beauty glow &   ||
+|  | health kits — delivered in 10 minutes.         ||
+|  |                                               ||
+|  | 🛡️ 100% Fit & Quality Guarantee               ||
+|  | 7-Day Free Doorstep Size Exchange   [Risk-Free]||
+|  +-----------------------------------------------+|
++---------------------------------------------------+
+|  NEW AISLES TO EXPLORE                 Just Added |
+|  +-------------------+   +-------------------+    |
+|  | [NEW LAUNCH]      |   | [TRENDING]        |    |
+|  | [IMG: Denims/App] |   | [IMG: Skincare]   |    |
+|  | Undergarments     |   | Beauty & Glow     |    |
+|  | Jockey, XYXX, Cot |   | Serums & Mist     |    |
+|  +-------------------+   +-------------------+    |
+|  +-------------------+   +-------------------+    |
+|  | [EMERGENCY]       |   | [FAST DISPATCH]   |    |
+|  | [IMG: First Aid]  |   | [IMG: Tech]       |    |
+|  | Pharmacy & Meds   |   | Tech Accessories  |    |
+|  +-------------------+   +-------------------+    |
++---------------------------------------------------+
+|  🩲 UNDERGARMENTS & CLOTHING BASICS [Doorstep Swap] |
+|  100% combed cotton, anti-microbial & breathable  |
+|                                                   |
+|  +------------+  +------------+  +------------+   |
+|  | [27% OFF]  |  | [22% OFF]  |  | [33% OFF]  |   |
+|  | [IMG]      |  | [IMG]      |  | [IMG]      |   |
+|  | XYXX Modal |  | Jockey Vest|  | Puma Socks |   |
+|  | Trunks 2-Pk|  | Combed Cot.|  | Ankle 3-Pk |   |
+|  | ₹399 ~~549 |  | ₹249 ~~320 |  | ₹199 ~~299 |   |
+|  | [ ADD ]    |  | [ ADD ]    |  | [ ADD ]    |   |
+|  +------------+  +------------+  +------------+   |
++---------------------------------------------------+
+|  CURATED INNERWEAR COMBO                          |
+|  +-----------------------------------------------+|
+|  | Fresh Cotton Innerwear & Socks Pack  [30% OFF]||
+|  | 2x Modal Trunks + 1x Ribbed Vest + 3x Socks   ||
+|  | Standalone: ₹697 -> Combo Price: ₹489 (Save208)||
+|  | [ + Add Banger Combo (₹489) ]                 ||
+|  +-----------------------------------------------+|
++---------------------------------------------------+
+|  ===============================================  |
+|  | [3]  ₹106 • Saved ₹29 • 12 mins [View Cart >]| |
+|  ===============================================  |
++---------------------------------------------------+
+|    🏠        🛍️          🔲        🛒    (✨New↗) |
+|   Home   Order Again  Category    Cart   District |
++---------------------------------------------------+
+
+
+================================================================================
+5. HABIT FORMATION & RETENTION METRICS (KPIs)
+================================================================================
+
+Target Metric                      Baseline     With Banger Flow   Impact
+--------------------------------------------------------------------------------
+Non-Grocery Cross-Category Rate      4.2%             14.8%         +252%
+Average Order Value (AOV)            ₹285             ₹412          +44.5%
+Apparel Cart Abandonment             68%              29%           -57.3%
+(Due to Doorstep Size Guarantee)
+30-Day Repeat Purchase (Combos)      18%              41%           +127%
+Customer Lifetime Value (90-day)     ₹3,200           ₹5,480        +71.2%
+================================================================================
