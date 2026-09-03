@@ -1,0 +1,350 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><title>Blinkit</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'on-tertiary': '#ffffff', 'primary-container': '#0c831f', 'surface-bright': '#f8f9ff', 'on-secondary-fixed-variant': '#802a00', 'on-tertiary-container': '#dfffd6', 'on-primary-fixed': '#002203', 'on-background': '#121c2a', 'on-secondary': '#ffffff', 'background': '#f8f9ff', 'surface-container-low': '#eff4ff', 'primary-fixed-dim': '#74dd6e', 'surface-container-high': '#dee9fc', 'surface': '#f8f9ff', 'on-error': '#ffffff', 'tertiary': '#12661e', 'surface-container-highest': '#d9e3f6', 'surface-container-lowest': '#ffffff', 'secondary-container': '#fc6018', 'on-primary-container': '#e0ffd7', 'tertiary-container': '#318035', 'surface-variant': '#d9e3f6', 'secondary': '#a83900', 'inverse-primary': '#74dd6e', 'tertiary-fixed-dim': '#88d982', 'primary': '#006714', 'error': '#ba1a1a', 'surface-container': '#e6eeff', 'secondary-fixed-dim': '#ffb59a', 'on-tertiary-fixed': '#002204', 'on-surface': '#121c2a', 'outline-variant': '#becab7', 'on-primary-fixed-variant': '#00530e', 'surface-dim': '#d0dbed', 'inverse-on-surface': '#eaf1ff', 'on-error-container': '#93000a', 'on-primary': '#ffffff', 'tertiary-fixed': '#a3f69c', 'on-secondary-container': '#531800', 'inverse-surface': '#27313f', 'outline': '#6f7a6a', 'primary-fixed': '#8ffb87', 'error-container': '#ffdad6', 'on-surface-variant': '#3f4a3c', 'on-secondary-fixed': '#380d00', 'on-tertiary-fixed-variant': '#005312', 'secondary-fixed': '#ffdbcf', 'surface-tint': '#006e16' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'spacing-xl': '1.25rem', 'spacing-sm': '0.5rem', 'margin-screen': '0.75rem', 'spacing-xs': '0.25rem', 'spacing-lg': '1rem', 'spacing-md': '0.75rem', 'spacing-xxs': '0.125rem', 'spacing-3xl': '2rem', 'spacing-2xl': '1.5rem', 'card-pad-horizontal': '0.5rem', 'card-pad-vertical': '0.625rem', 'gutter-grid': '0.5rem' }, 'fontFamily': { 'body-sm': ['Inter'], 'label-lg': ['Inter'], 'label-md': ['Inter'], 'title-md': ['Inter'], 'label-sm': ['Inter'], 'price-strikethrough': ['Inter'], 'headline-md': ['Inter'], 'price-headline': ['Inter'], 'body-lg': ['Inter'], 'body-md': ['Inter'], 'headline-lg': ['Inter'], 'headline-sm': ['Inter'] }, 'fontSize': { 'body-sm': ['11px', { 'lineHeight': '14px', 'fontWeight': '400' }], 'label-lg': ['13px', { 'lineHeight': '16px', 'letterSpacing': '0.01em', 'fontWeight': '600' }], 'label-md': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.02em', 'fontWeight': '700' }], 'title-md': ['15px', { 'lineHeight': '20px', 'fontWeight': '600' }], 'label-sm': ['10px', { 'lineHeight': '12px', 'letterSpacing': '0.03em', 'fontWeight': '700' }], 'price-strikethrough': ['11px', { 'lineHeight': '14px', 'fontWeight': '400' }], 'headline-md': ['20px', { 'lineHeight': '26px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'price-headline': ['14px', { 'lineHeight': '18px', 'fontWeight': '700' }], 'body-lg': ['15px', { 'lineHeight': '22px', 'fontWeight': '400' }], 'body-md': ['13px', { 'lineHeight': '18px', 'fontWeight': '400' }], 'headline-lg': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'headline-sm': ['17px', { 'lineHeight': '22px', 'fontWeight': '600' }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 px-margin-screen flex flex-col justify-between py-spacing-xs"><div class="flex items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-sm"><img alt="Blinkit Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V_qyezFvkNk3W19OX-ejkQytMXVMcyhOjC8yaoCJAfGH3c6YILqGRFIAyNrqfQy2eP3_9a1HJHQAFE3KkuF0PMgBiaU7lTh2y3Vd5xIM_TkNxDVyP-pcCCnXFQQ4cX5CMv5QRbi4YHu2zvA0qqN00lEUX8JkQD-jyS6IC3keOEqR_GnGLMavJhZ6AxypKbrOL7-VAUtEK3O9hbcG3nq2y0vQMDnMz50kBfQITV_W0FHyJfxB06YBactg"><div class="flex flex-col text-left"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Blinkit in 12 minutes</span><button class="flex items-center gap-spacing-xxs text-on-surface-variant hover:text-on-surface text-left"><span class="font-label-sm text-label-sm truncate max-w-[190px]">Home - Koramangala, Bengaluru, Karnataka</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div></div><div class="flex items-center gap-spacing-xs"><span class="hidden">Home Feed</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center w-full h-11 px-spacing-md bg-surface-container-lowest rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.06)] gap-spacing-sm"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span><span class="flex-1 font-body-sm text-body-sm text-on-surface-variant truncate">Search 'pooja thali' or 'milk, bread, chips'</span><button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[20px]">mic</span></button></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Bestsellers Section -->
+<section class="flex flex-col w-full px-margin-screen pt-spacing-sm pb-spacing-xs" id="promo-coupon-banner">
+  <div class="relative bg-gradient-to-b from-[#ffeedd] to-[#ffe3c6] rounded-2xl p-spacing-md shadow-sm border border-secondary-container/20">
+    <button class="absolute top-2.5 right-2.5 w-6 h-6 flex items-center justify-center rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-all" onclick="document.getElementById('promo-coupon-banner').remove()" aria-label="Close banner">
+      <span class="material-symbols-outlined text-[16px]">close</span>
+    </button>
+    <div class="flex items-center gap-1.5 mb-1.5">
+      <span class="bg-secondary-container text-on-secondary font-label-sm text-[9px] px-2 py-0.5 rounded-full font-bold shadow-sm tracking-wide uppercase">
+        FIRST TIME OFFER
+      </span>
+      <span class="font-label-sm text-[10px] text-secondary font-semibold flex items-center gap-0.5">
+        <span class="material-symbols-outlined text-[13px]">auto_awesome</span> Beauty Special
+      </span>
+    </div>
+    <h3 class="font-title-md text-title-md text-on-secondary-fixed font-bold leading-tight pr-6">
+      First time in Beauty this month? Get 15% off + easy returns on orders above ₹300.
+    </h3>
+    <div class="flex items-center justify-between mt-spacing-sm pt-0.5">
+      <button class="h-8 px-3.5 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-bold shadow-sm hover:opacity-90 active:scale-95 transition-all flex items-center gap-1">
+        <span class="">Claim Offer</span>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </button>
+      <button class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface text-[10px] font-label-sm transition-colors">
+        <span class="material-symbols-outlined text-[14px]">info</span>
+        <span class="">T&amp;C Apply</span>
+      </button>
+    </div>
+  </div>
+</section><section class="flex flex-col w-full px-margin-screen pt-spacing-sm pb-spacing-xs">
+<div class="flex items-center justify-between mb-spacing-xs">
+<div class="flex items-center gap-spacing-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bestsellers</h2>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-primary-container/15 text-primary">
+          Fast moving
+        </span>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold hover:opacity-80 transition-opacity">
+        see all
+      </button>
+</div>
+<!-- Horizontal Product Scroll -->
+<div class="flex gap-spacing-sm overflow-x-auto pb-spacing-xs pt-0.5 no-scrollbar -mx-margin-screen px-margin-screen">
+<!-- Item 1: Potato -->
+<div class="flex-shrink-0 w-[118px] bg-surface-container-lowest rounded-xl p-card-pad-vertical shadow-sm flex flex-col justify-between relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg p-1.5 flex items-center justify-center overflow-hidden mb-1.5">
+<span class="absolute top-1 left-1 bg-secondary-container text-on-secondary text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm leading-tight">25% OFF</span>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Fresh raw organic farm-picked golden brown potatoes sitting together clean bright studio lighting on white crisp pure background Blinkit catalog style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwFWNNHPJOxki1Mif73B_X-pAvOejB40JHtEmDL-EkjIW3M4xLwLuo1VcekaTcoHnr-6-gYvHYvc1ymx-sOsKDrFQTXGs5Lg2gwiSk4ZvzIN_kdjp6uSPBc3r7q6NDpZZGj_hePa_Fkqxpi5_drvf8EEvWLUy9KZ5cuW3yGW6P3ulBliRfp3ee2yAsOTnGbf5R_ET9FdbcSoSF9quYaXFEa8jZYRlGZ544-DOC7aK6Q1G3c8ebRS9q">
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-primary text-[12px]">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">8 MINS</span>
+</div>
+<div class="flex flex-col min-h-[30px] mb-1">
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1 leading-tight">Potato (Alugadde)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 kg</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-price-headline text-price-headline text-on-surface leading-tight">₹39</span>
+<span class="font-price-strikethrough text-price-strikethrough text-on-surface-variant line-through leading-none">₹52</span>
+</div>
+<button class="add-btn h-7 px-3 bg-surface-container-lowest text-primary rounded-lg font-label-md text-label-md shadow-sm hover:bg-surface-container-low active:scale-95 transition-all flex items-center justify-center" onclick="toggleAdd(this, 'Potato', 39)">
+            ADD
+          </button>
+</div>
+</div>
+<!-- Item 2: Green Chilli -->
+<div class="flex-shrink-0 w-[118px] bg-surface-container-lowest rounded-xl p-card-pad-vertical shadow-sm flex flex-col justify-between relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg p-1.5 flex items-center justify-center overflow-hidden mb-1.5">
+<span class="absolute top-1 left-1 bg-secondary-container text-on-secondary text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm leading-tight">28% OFF</span>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Vibrant fresh spicy green chillies hasiru menasina kaayi arranged cleanly on pure white table surface crisp grocery photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8POul-Ts2y0jfHzRDDGxzTLj-D3ZtGgDc01KQMwsLNDCRew-xDb3Ji4OjTvh2a3rade_ZxGLc15JsKsKArNLIDUG7EqozLlZCjlplJHcy9lYB7q_OoWYAHGjqvdj1FPoMqv3v1N1TvECEP3NfKAGCoBHp5A8jKSbNRez4Mojn-lAB8tnuQJdZ7dh0narPC6ptin0AL6A0blR1bnnk6gIH3QGumcl1U3VZif8SF31ygqrJHgSP-iyV">
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-primary text-[12px]">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">8 MINS</span>
+</div>
+<div class="flex flex-col min-h-[30px] mb-1">
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1 leading-tight">Green Chilli</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100 g</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-price-headline text-price-headline text-on-surface leading-tight">₹20</span>
+<span class="font-price-strikethrough text-price-strikethrough text-on-surface-variant line-through leading-none">₹28</span>
+</div>
+<button class="add-btn h-7 px-3 bg-surface-container-lowest text-primary rounded-lg font-label-md text-label-md shadow-sm hover:bg-surface-container-low active:scale-95 transition-all flex items-center justify-center" onclick="toggleAdd(this, 'Chilli', 20)">
+            ADD
+          </button>
+</div>
+</div>
+<!-- Item 3: Onion -->
+<div class="flex-shrink-0 w-[118px] bg-surface-container-lowest rounded-xl p-card-pad-vertical shadow-sm flex flex-col justify-between relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg p-1.5 flex items-center justify-center overflow-hidden mb-1.5">
+<span class="absolute top-1 left-1 bg-secondary-container text-on-secondary text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm leading-tight">21% OFF</span>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Fresh reddish purple shiny onions eerulli studio grocery isolated shot on clean white background sharp texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTBnPf2PSEPiwb7AfZpIHyAgTdRAk7i1LkDEiTpazErP-2fXZzzsvrpq9p6fWuzyyFcchUyICMRo7fv3-stOpQA3xtnNB7VRuLqHbDF5OOGJJgcfXmWuG06xBmGl2QDI20NEGvmnm6f7CuVz6G3Uo7lB4YLuB_wXnyPjkjsZjIOLC3SU0kGbbogrPfIKzc8dnVvlJ0eF3rlySgvzS8giWC60hVJElE6fkIaVOWtymEJirfojFYagh0">
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-primary text-[12px]">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">10 MINS</span>
+</div>
+<div class="flex flex-col min-h-[30px] mb-1">
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1 leading-tight">Onion (Eerulli)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 kg</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-price-headline text-price-headline text-on-surface leading-tight">₹41</span>
+<span class="font-price-strikethrough text-price-strikethrough text-on-surface-variant line-through leading-none">₹52</span>
+</div>
+<button class="add-btn h-7 px-3 bg-surface-container-lowest text-primary rounded-lg font-label-md text-label-md shadow-sm hover:bg-surface-container-low active:scale-95 transition-all flex items-center justify-center" onclick="toggleAdd(this, 'Onion', 41)">
+            ADD
+          </button>
+</div>
+</div>
+<!-- Item 4: Fresh Tomato -->
+<div class="flex-shrink-0 w-[118px] bg-surface-container-lowest rounded-xl p-card-pad-vertical shadow-sm flex flex-col justify-between relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg p-1.5 flex items-center justify-center overflow-hidden mb-1.5">
+<span class="absolute top-1 left-1 bg-secondary-container text-on-secondary text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm leading-tight">18% OFF</span>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Ripe red plump hybrid tomatoes fresh with green stem dewdrops bright soft retail illumination pure white studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL-8HXHUrgodb9xvQcUi_1denDYHOnlo2Neap-oqslIKTM0l997Be_OGtmskojmTq4hxopvs90ghOx41LFxNQieISruzVwxo47mnRNTzMuOOnQkm_6kjKoMWBZ_oVasdxAuxjiFcIdbENHV_ckaskUgnEsxnAGj5iUenPM8vKcJIO10a4E7lel2xVF-RfD5o1AZaNfZrn_k81goO7uSYRE3MAJZqglivWBtjYq60b7gs3c_xOWHPnv">
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-primary text-[12px]">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">9 MINS</span>
+</div>
+<div class="flex flex-col min-h-[30px] mb-1">
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1 leading-tight">Tomato Hybrid</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">500 g</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-price-headline text-price-headline text-on-surface leading-tight">₹22</span>
+<span class="font-price-strikethrough text-price-strikethrough text-on-surface-variant line-through leading-none">₹27</span>
+</div>
+<button class="add-btn h-7 px-3 bg-surface-container-lowest text-primary rounded-lg font-label-md text-label-md shadow-sm hover:bg-surface-container-low active:scale-95 transition-all flex items-center justify-center" onclick="toggleAdd(this, 'Tomato', 22)">
+            ADD
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ADDITION: New for You (Personalized Recommendations) -->
+<section class="flex flex-col w-full px-margin-screen pt-spacing-sm pb-spacing-xs">
+<div class="bg-surface-container-lowest rounded-2xl p-spacing-md shadow-sm">
+<div class="flex items-start justify-between mb-spacing-sm">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">auto_awesome</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">New for You</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Picked based on what you already buy</p>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-2 py-0.5 rounded-full font-semibold">
+          Curated
+        </span>
+</div>
+<!-- 3 Untried Category Recommendation Cards -->
+<div class="grid grid-cols-3 gap-spacing-sm">
+<!-- Tile 1: Beauty & Personal Care -->
+<a class="group flex flex-col items-center text-center p-2 rounded-xl bg-gradient-to-b from-[#ffeedd] to-[#ffe3c6] transition-transform active:scale-95 relative shadow-sm" href="#">
+<div class="absolute -top-1.5 -right-1 bg-secondary-container text-on-secondary font-label-sm text-[9px] px-1.5 py-0.2 rounded-full font-bold shadow-sm tracking-wide uppercase">
+            Untried
+          </div>
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/80 p-2 flex items-center justify-center my-1">
+<img class="w-full h-full object-contain" data-alt="Skincare cosmetics pastel aesthetic serum bottle face cream moisturizer organic beauty product render on transparent or soft warm background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_cRob5RodOEuo9LxehWUXf3f4SzFMwB1gHbq8WG1LvRd7q3AvslVMI1nLSlP0_rFu-9u4vq19-uDV4KwW0CeemOqGM2-1lgNds9LoCdH0MtDvy7nDePPHpJ4Ao7WrQ4oyFAeslGaxqaGUe_yDHUNpiObQgygiEo2UuhcPt25UgNUjfjUmfDp41dkIpHuZOJwUcTaZwkDg5niE7isTujHZrcjGx8oJWotEnGxAWJrymBXNDwi9Nth_">
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed font-bold line-clamp-2 mt-1 leading-tight">
+            Beauty &amp; Care
+          </span>
+<span class="font-body-sm text-[10px] text-secondary font-semibold mt-0.5">Up to 40% OFF</span>
+</a>
+<!-- Tile 2: Household & Cleaning -->
+<a class="group flex flex-col items-center text-center p-2 rounded-xl bg-gradient-to-b from-[#e3f2fd] to-[#bbdefb] transition-transform active:scale-95 relative shadow-sm" href="#">
+<div class="absolute -top-1.5 -right-1 bg-secondary-container text-on-secondary font-label-sm text-[9px] px-1.5 py-0.2 rounded-full font-bold shadow-sm tracking-wide uppercase">
+            Untried
+          </div>
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/80 p-2 flex items-center justify-center my-1">
+<img class="w-full h-full object-contain" data-alt="Eco cleaning spray bottle dishwashing detergent and microfiber cloth modern household hygiene essentials studio presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN-hAfWVeAnxnWUY_ucyB_tXmAbk9VdNiQ2DWEWdJUAm-n42OW3v760VWpxitIa_xUI2cij5-trKlpRz5jsIt4AF3AXj2Cb135N6k_HLOPBK5cuNZMYLd-ZwAr4p2M9fRNDzXYm1eVUkkQ6aZp5GO00XyDwS2ZzH95aQzdrhYlVgTAmyVt_Hkk7GMX0Ygdquxx89SsJnhzimfbi8lWpZLQuMBu7zQJyCvi-lF1v4AId_7Bt2Bd5FCO">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold line-clamp-2 mt-1 leading-tight">
+            Home &amp; Clean
+          </span>
+<span class="font-body-sm text-[10px] text-tertiary font-semibold mt-0.5">Daily Needs</span>
+</a>
+<!-- Tile 3: Gourmet Snacks -->
+<a class="group flex flex-col items-center text-center p-2 rounded-xl bg-gradient-to-b from-[#fff9c4] to-[#fff176] transition-transform active:scale-95 relative shadow-sm" href="#">
+<div class="absolute -top-1.5 -right-1 bg-secondary-container text-on-secondary font-label-sm text-[9px] px-1.5 py-0.2 rounded-full font-bold shadow-sm tracking-wide uppercase">
+            Untried
+          </div>
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/80 p-2 flex items-center justify-center my-1">
+<img class="w-full h-full object-contain" data-alt="Artisanal gourmet crispy nachos chips and premium savory salsa dip snack pouch modern appetizing presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1JRqwTc5DyTx9iHPazQLw43OwCXCgMQPZSewCMwZOPZi9VXY1f0jfAd1UMGIXsQT_pyQWhV0lH-S2mkV_sajc5ON0weDJNMXoIPmnEL5rMkZ0KPWlTfDlyeue81nHXDHBTEuioUC_42pc670rZXVoYZbwYApteM99d0X-qfKoBEp3bJqnDZQcj_UeNwuqUgaGQgisyKXmicbSiCSw0EcrUN_bzbXnJzsig056IOJ3QX_NSBYweUXi">
+</div>
+<span class="font-label-sm text-label-sm text-[#5d4037] font-bold line-clamp-2 mt-1 leading-tight">
+            Gourmet Snacks
+          </span>
+<span class="font-body-sm text-[10px] text-secondary-container font-semibold mt-0.5">Try New</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Shop By Category (2x4 Grid) -->
+<section class="flex flex-col w-full px-margin-screen pt-spacing-sm pb-spacing-xl">
+<div class="flex items-center justify-between mb-spacing-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Shop by category</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Explore All</span>
+</div>
+<div class="grid grid-cols-4 gap-gutter-grid">
+<!-- 1. Vegetables & Fruits -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#f1f8e9] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Fresh colorful mix of crisp organic broccoli ripe red apple juicy carrots bananas produce basket modern grocery thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2LlGrrlMeWg-XPxTKjju75jYn07U2AiYQAVB-D-LRDeBLdDW5W9xVEOjoRDQVseTxiF13lKnJaHgrPlL147n_Wx8jUq9J5OvIQLlPPzMqmSPPApzcGjovF51kmiSoRNCjaeh4u1gpf2Ly0LHcdixpH98j3OgULhUQdH8agJO0JzHoS04f9O4kG73O97vFdwBzTzGLGQjLUaJlycAN5gRdvJBqRXDF8XWWyEkgC2yNg3b7Y8hgFKL_">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Vegetables &amp; Fruits</span>
+</a>
+<!-- 2. Dairy & Breakfast -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#e8f5e9] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Fresh pasteurized milk carton organic farmhouse butter pack and fresh curd cup isolated bright white lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEmJljKdtX7GGhwUYnW9NuOJOq3pZmK2ncG3ETE8fdo53UUNnybilNFjXoniQ8HrgnK5BoUyWbfppmN5YXEc5O_UgTLjta7f8uV0FD5H1zrxuMcnLEP6sjMbZ4W3udPwYScVP-daNb5XQUh7JMwZH3KVhC6pILzldvbAoFTevY1X2AC5df5Mo1-SjX5iUHftu3ojOIJS9BcelR32J00qqKB6dXE-RiW4LhzXBvzCVDpcVSENLyxGIx">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Dairy &amp; Breakfast</span>
+</a>
+<!-- 3. Munchies -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#fff3e0] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Bright colorful potato chips bag savory namkeen pouch and roasted salted makhana pack retail photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUPSmJQD97Ys5Gwn5I9qZKOUOXxjaBRkNhjGtFQSH38g7-e2fAjmsQwGaoSLZpODljwcYiOhlG00XWEV7C-1_ZXL4HTfZNYTKgJbN3XNTvXk_sSXsqXLJ-2oE-9EUWcnW-XROjIUk3Jot23Unie8EuhgkNM4Tdj1ZGiPHtO2Ip96GT1zwzoPUPgsM-At8rMWLugnxDz1X3E8CEfZhXPDlXp-wx1frG7m2VrKprcsPAr7Ht_L1OTwwr">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Munchies</span>
+</a>
+<!-- 4. Cold Drinks & Juices -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#ffebee] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Refreshing chilled glass soda bottle canned fruit juice and coconut water drink bottle with fresh droplets studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSCKZad5DUitn5as9T-m5wldebrJdqmhMqL4bgiu1QhVyEKl2KqWb1VvIpaZgo-KgoMRacHcNY_nFQN0XOIAZlwWVDypx_FztEIXl3GSDl9jD2u04ZrAAcI01YzrxFTOPoyUA5IgDWwoPFzbY_o2GbNpU13rJJyuEXSckDfMaFFSpphVIDAALi6uy9uGZnq1q8QCXVJLvYkXG7qgbU5CWTajDFLIRvYcuCE8gxmPL1rW_vKmPgfDtY">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Cold Drinks &amp; Juices</span>
+</a>
+<!-- 5. Instant & Frozen -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#ede7f6] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Instant noodles pack frozen green peas packet and ready to eat paratha pack appetizing retail graphics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Ly4ckd0nG2dQjhZVBao5PioVCQ849LQSrKtBOmgynchQsvC1Y4vLmqK-ynvlmHuRaRbj2AaFIcpAOkLMxLdIB6w9I1AnQEVm5LfratWQGD1sl0-1eHy19dMIMl7AuavmxtFoMqXhO49LCN7pfLmOG1JZJUnWZvbUrmZyM7xPYuDZGNsv1yLgxATjFLndn_PGaNLrb5rhqR-LpDZAnSP60dPbeKkvaiX3uT3UM4cyyHK2D4-21sip">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Instant &amp; Frozen</span>
+</a>
+<!-- 6. Tea, Coffee & Health -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#eefeec] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Assam tea leaves tin instant roasted coffee jar and green tea box clean minimalist setup on pure white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx31w7rvkjoeNh9dDVLQMwi8c4lquzW48y46e-1CP2GFfqDUAPsPpf91aIgAFIjl5t4SU-WozD8xM2WjmbTcaF8L04HH4VNcz9HPdy-vZAzSE2h_KSN43uCxfM8clwNe4MQ6UeVmQO1JANgjXCoIa8EqGjT627XCNYq6I9TW3ixjRKLVxBmsLz18qXPMIvmcutr8umo3c3HSYrZ84iiWtp0xfbv7YJM65I0JfHP8w-57VAP89yhYlZ">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Tea, Coffee &amp; Health</span>
+</a>
+<!-- 7. Bakery & Biscuits -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#fff8e1] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Fresh sliced artisanal sandwich bread loaf crispy butter cookies pack and chocolate chip biscuits on display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5mUWD1r1k4dxhTwG6KozyyVXSfnanIkc-XgJchACNjjWCgXeapouqfKohmqQ2xpHb3Hn6-KE-65ksHGPzGdSXt2Y7Jo7A6bjM9KrXC_vETnE5zUSLWXDuExej785b5LtmH20L65DYuTWM_MMkHvtATjx0IV4hyUgWwbH-6-kvGo42DK7fS7H2r56FWDu_X_iAWG5UiAC5Z211i_IZlQWQZ_uc9rCQbBxE9vRW02yUtieAyowjv3EJ">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Bakery &amp; Biscuits</span>
+</a>
+<!-- 8. Sweet Tooth -->
+<a class="flex flex-col items-center text-center p-card-pad-horizontal py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow active:scale-95" href="#">
+<div class="w-14 h-14 bg-[#fce4ec] rounded-xl flex items-center justify-center p-1.5 mb-1">
+<img class="w-full h-full object-contain" data-alt="Assorted dark chocolate bars creamy gulab jamun tin and celebration candy gift pack vibrant retail render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgwVBuBqXAP_h0IvkkryBK3NYgP_z4g43vznJocqu_qEkuzBpsOvJEQkO_edhyIuOcgGyl8qoL_PyISshDVS_9SJYbOU6dX-ckpMNz6IZBuObTzaTlYiUXLg57ClfbIRtFuujLSTOaBw9q8u2v9A1mZI1MFUurihGKppAByZFR3co9n24WFpp_W2ZkkukOqtGWUrT228CHLpCofBvnw7ondgPn7rSwM_yB8hr0vAOVRnJ7IZGby8gs">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold line-clamp-2 leading-tight">Sweet Tooth</span>
+</a>
+</div>
+</section>
+<!-- Sticky Floating Quick Cart Pill (Level 3 Elevation) -->
+<div class="fixed bottom-20 left-3 right-3 z-40 max-w-[420px] mx-auto transition-all duration-300 transform translate-y-0" id="floating-cart">
+<div class="bg-primary-container text-on-primary rounded-xl px-spacing-md py-spacing-sm shadow-[0_6px_20px_rgba(12,131,31,0.28)] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[20px]">shopping_bag</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary leading-tight font-bold" id="cart-item-count">3 items · ₹225</span>
+<span class="font-label-sm text-[10px] text-on-primary-container">SAVED ₹42</span>
+</div>
+</div>
+<button class="flex items-center gap-1 font-title-md text-title-md font-bold text-on-primary pl-3 py-1 hover:opacity-90 active:scale-95 transition-all">
+<span class="">View Cart</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let cartCount = 3;
+  let cartTotal = 225;
+
+  function toggleAdd(button, item, price) {
+    if (button.classList.contains('active-stepper')) return;
+    
+    cartCount += 1;
+    cartTotal += price;
+    updateCartUI();
+
+    button.classList.remove('bg-surface-container-lowest', 'text-primary', 'hover:bg-surface-container-low');
+    button.classList.add('bg-primary-container', 'text-on-primary', 'active-stepper', 'px-1.5', 'w-[72px]');
+    button.innerHTML = `
+      <div class="flex items-center justify-between w-full font-bold">
+        <span class="text-base leading-none px-1 py-0.5 hover:opacity-80 active:scale-125" onclick="event.stopPropagation(); changeQty(this, -1, ${price})">−</span>
+        <span class="qty text-xs px-1">1</span>
+        <span class="text-base leading-none px-1 py-0.5 hover:opacity-80 active:scale-125" onclick="event.stopPropagation(); changeQty(this, 1, ${price})">+</span>
+      </div>
+    `;
+  }
+
+  function changeQty(btn, delta, price) {
+    const parentContainer = btn.closest('.active-stepper');
+    const qtySpan = parentContainer.querySelector('.qty');
+    let qty = parseInt(qtySpan.textContent) + delta;
+
+    if (qty <= 0) {
+      cartCount -= 1;
+      cartTotal -= price;
+      updateCartUI();
+      parentContainer.classList.remove('bg-primary-container', 'text-on-primary', 'active-stepper', 'w-[72px]', 'px-1.5');
+      parentContainer.classList.add('bg-surface-container-lowest', 'text-primary', 'hover:bg-surface-container-low', 'px-3');
+      parentContainer.innerHTML = 'ADD';
+      return;
+    }
+
+    qtySpan.textContent = qty;
+    if (delta > 0) {
+      cartCount += 1;
+      cartTotal += price;
+    } else {
+      cartCount -= 1;
+      cartTotal -= price;
+    }
+    updateCartUI();
+  }
+
+  function updateCartUI() {
+    const el = document.getElementById('cart-item-count');
+    if (el) {
+      el.textContent = `${cartCount} items · ₹${cartTotal}`;
+    }
+    const cartPill = document.getElementById('floating-cart');
+    if (cartPill) {
+      if (cartCount === 0) {
+        cartPill.classList.add('translate-y-24', 'opacity-0');
+      } else {
+        cartPill.classList.remove('translate-y-24', 'opacity-0');
+      }
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_10px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-spacing-sm"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-primary font-label-md" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[22px]">electric_bolt</span><span class="font-label-sm text-label-sm mt-0.5">Delivery</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface" data-path="categories" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">Categories</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface" data-path="order-history" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Orders</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface relative" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="font-label-sm text-label-sm mt-0.5">Cart</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface" data-path="print-store" href="#"><span class="material-symbols-outlined text-[22px]">print</span><span class="font-label-sm text-label-sm mt-0.5">Print</span></a></div></nav>
+
+</body></html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><title>Blinkit</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'on-tertiary': '#ffffff', 'primary-container': '#0c831f', 'surface-bright': '#f8f9ff', 'on-secondary-fixed-variant': '#802a00', 'on-tertiary-container': '#dfffd6', 'on-primary-fixed': '#002203', 'on-background': '#121c2a', 'on-secondary': '#ffffff', 'background': '#f8f9ff', 'surface-container-low': '#eff4ff', 'primary-fixed-dim': '#74dd6e', 'surface-container-high': '#dee9fc', 'surface': '#f8f9ff', 'on-error': '#ffffff', 'tertiary': '#12661e', 'surface-container-highest': '#d9e3f6', 'surface-container-lowest': '#ffffff', 'secondary-container': '#fc6018', 'on-primary-container': '#e0ffd7', 'tertiary-container': '#318035', 'surface-variant': '#d9e3f6', 'secondary': '#a83900', 'inverse-primary': '#74dd6e', 'tertiary-fixed-dim': '#88d982', 'primary': '#006714', 'error': '#ba1a1a', 'surface-container': '#e6eeff', 'secondary-fixed-dim': '#ffb59a', 'on-tertiary-fixed': '#002204', 'on-surface': '#121c2a', 'outline-variant': '#becab7', 'on-primary-fixed-variant': '#00530e', 'surface-dim': '#d0dbed', 'inverse-on-surface': '#eaf1ff', 'on-error-container': '#93000a', 'on-primary': '#ffffff', 'tertiary-fixed': '#a3f69c', 'on-secondary-container': '#531800', 'inverse-surface': '#27313f', 'outline': '#6f7a6a', 'primary-fixed': '#8ffb87', 'error-container': '#ffdad6', 'on-surface-variant': '#3f4a3c', 'on-secondary-fixed': '#380d00', 'on-tertiary-fixed-variant': '#005312', 'secondary-fixed': '#ffdbcf', 'surface-tint': '#006e16' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'spacing-xl': '1.25rem', 'spacing-sm': '0.5rem', 'margin-screen': '0.75rem', 'spacing-xs': '0.25rem', 'spacing-lg': '1rem', 'spacing-md': '0.75rem', 'spacing-xxs': '0.125rem', 'spacing-3xl': '2rem', 'spacing-2xl': '1.5rem', 'card-pad-horizontal': '0.5rem', 'card-pad-vertical': '0.625rem', 'gutter-grid': '0.5rem' }, 'fontFamily': { 'body-sm': ['Inter'], 'label-lg': ['Inter'], 'label-md': ['Inter'], 'title-md': ['Inter'], 'label-sm': ['Inter'], 'price-strikethrough': ['Inter'], 'headline-md': ['Inter'], 'price-headline': ['Inter'], 'body-lg': ['Inter'], 'body-md': ['Inter'], 'headline-lg': ['Inter'], 'headline-sm': ['Inter'] }, 'fontSize': { 'body-sm': ['11px', { 'lineHeight': '14px', 'fontWeight': '400' }], 'label-lg': ['13px', { 'lineHeight': '16px', 'letterSpacing': '0.01em', 'fontWeight': '600' }], 'label-md': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.02em', 'fontWeight': '700' }], 'title-md': ['15px', { 'lineHeight': '20px', 'fontWeight': '600' }], 'label-sm': ['10px', { 'lineHeight': '12px', 'letterSpacing': '0.03em', 'fontWeight': '700' }], 'price-strikethrough': ['11px', { 'lineHeight': '14px', 'fontWeight': '400' }], 'headline-md': ['20px', { 'lineHeight': '26px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'price-headline': ['14px', { 'lineHeight': '18px', 'fontWeight': '700' }], 'body-lg': ['15px', { 'lineHeight': '22px', 'fontWeight': '400' }], 'body-md': ['13px', { 'lineHeight': '18px', 'fontWeight': '400' }], 'headline-lg': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'headline-sm': ['17px', { 'lineHeight': '22px', 'fontWeight': '600' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 px-margin-screen flex flex-col justify-between py-spacing-xs"><div class="flex items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-sm"><img alt="Blinkit Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V_qyezFvkNk3W19OX-ejkQytMXVMcyhOjC8yaoCJAfGH3c6YILqGRFIAyNrqfQy2eP3_9a1HJHQAFE3KkuF0PMgBiaU7lTh2y3Vd5xIM_TkNxDVyP-pcCCnXFQQ4cX5CMv5QRbi4YHu2zvA0qqN00lEUX8JkQD-jyS6IC3keOEqR_GnGLMavJhZ6AxypKbrOL7-VAUtEK3O9hbcG3nq2y0vQMDnMz50kBfQITV_W0FHyJfxB06YBactg"><div class="flex flex-col text-left"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Blinkit in 12 minutes</span><button class="flex items-center gap-spacing-xxs text-on-surface-variant hover:text-on-surface text-left"><span class="font-label-sm text-label-sm truncate max-w-[190px]">Home - Koramangala, Bengaluru, Karnataka</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div></div><div class="flex items-center gap-spacing-xs"><span class="hidden">Cart</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center w-full h-11 px-spacing-md bg-surface-container-lowest rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.06)] gap-spacing-sm"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span><span class="flex-1 font-body-sm text-body-sm text-on-surface-variant truncate">Search 'pooja thali' or 'milk, bread, chips'</span><button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[20px]">mic</span></button></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Cart Navigation & Top Status Bar -->
+<div class="flex items-center justify-between px-margin-screen py-spacing-sm bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)] sticky top-0 z-20">
+<div class="flex items-center gap-spacing-sm">
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">My Cart</h1>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant">2 items</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span> 
+          Instant dispatch guaranteed
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-xs">
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col p-margin-screen gap-spacing-md">
+<!-- Out of Stock Alert Banner -->
+<div class="flex items-center justify-between p-spacing-md rounded-xl bg-error-container/30 shadow-[0_2px_8px_rgba(186,26,26,0.04)]">
+<div class="flex items-center gap-spacing-sm">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">remove_shopping_cart</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface leading-snug">1 out of stock item...</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">You can continue to checkout</span>
+</div>
+</div>
+<button class="px-spacing-md py-1.5 rounded-full bg-surface-container-lowest shadow-sm font-label-md text-label-md text-error hover:bg-error-container/40" type="button">
+        Review
+      </button>
+</div>
+<!-- Savings Banner -->
+<div class="flex items-center justify-between px-spacing-md py-spacing-sm rounded-xl bg-primary-fixed/30 text-on-primary-fixed shadow-sm"><div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">savings</span>
+<span class="font-label-lg text-label-lg font-semibold">Your total savings ₹8</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary text-on-primary tracking-wide uppercase">Applied</span></div>
+<!-- Active Delivery Fulfillment Box -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.04)] p-spacing-md gap-spacing-md"><!-- ETA header -->
+<div class="flex items-center justify-between pb-spacing-xs">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-6 h-6 rounded-md bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Delivery in 8 minutes</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 items</span>
+</div>
+<!-- Item 1: Amul Taaza Milk -->
+<div class="flex items-center justify-between py-spacing-xs">
+<div class="flex items-center gap-spacing-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center overflow-hidden p-1">
+<img class="w-full h-full object-contain" data-alt="Amul Taaza Homogenised Toned Milk carton on white clean background" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1550583724-b2692b85b150?w=120&amp;auto=format&amp;fit=crop&amp;q=80';" src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=120&amp;auto=format&amp;fit=crop&amp;q=80">
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Amul Taaza Homogenised Milk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 L</span>
+<div class="flex items-baseline gap-spacing-xs mt-0.5">
+<span class="font-price-headline text-price-headline text-on-surface">₹72</span>
+<span class="font-price-strikethrough text-price-strikethrough text-on-surface-variant line-through">₹75</span>
+</div>
+</div>
+</div>
+<!-- Stepper -->
+<div class="flex items-center bg-primary rounded-lg text-on-primary h-8 px-1 shadow-sm">
+<button class="w-7 h-7 flex items-center justify-center font-bold text-on-primary hover:opacity-80 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md px-2 min-w-[20px] text-center">1</span>
+<button class="w-7 h-7 flex items-center justify-center font-bold text-on-primary hover:opacity-80 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Harvest Gold Bread -->
+<div class="flex items-center justify-between py-spacing-xs">
+<div class="flex items-center gap-spacing-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center overflow-hidden p-1">
+<img class="w-full h-full object-contain" data-alt="Harvest Gold White Bread loaf pack on clean white background" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?w=120&amp;auto=format&amp;fit=crop&amp;q=80';" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=120&amp;auto=format&amp;fit=crop&amp;q=80">
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Harvest Gold White Bread</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">400 g</span>
+<div class="flex items-baseline gap-spacing-xs mt-0.5">
+<span class="font-price-headline text-price-headline text-on-surface">₹45</span>
+<span class="font-price-strikethrough text-price-strikethrough text-on-surface-variant line-through">₹50</span>
+</div>
+</div>
+</div>
+<!-- Stepper -->
+<div class="flex items-center bg-primary rounded-lg text-on-primary h-8 px-1 shadow-sm">
+<button class="w-7 h-7 flex items-center justify-center font-bold text-on-primary hover:opacity-80 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md px-2 min-w-[20px] text-center">1</span>
+<button class="w-7 h-7 flex items-center justify-center font-bold text-on-primary hover:opacity-80 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div></div>
+<!-- Complete Your Combo Promotional Card -->
+<div class="flex flex-col p-spacing-md rounded-xl bg-secondary-fixed/50 shadow-[0_2px_12px_rgba(252,96,24,0.08)] gap-spacing-sm"><div class="flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">auto_awesome</span>
+<h2 class="font-title-md text-title-md text-on-secondary-container">Complete your combo</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary shadow-xs">
+  Bundled price — save ₹16
+</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest/90 p-spacing-sm rounded-lg backdrop-blur-sm gap-spacing-sm">
+<div class="flex items-center gap-spacing-sm min-w-0">
+<div class="relative w-14 h-14 rounded-md bg-surface-container-low flex items-center justify-center overflow-hidden flex-shrink-0 p-1">
+<img class="w-full h-full object-contain" data-alt="Comfort Morning Fresh Fabric Conditioner small pouch bottle packaging" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=120&amp;auto=format&amp;fit=crop&amp;q=80';" src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=120&amp;auto=format&amp;fit=crop&amp;q=80">
+<span class="absolute top-0 left-0 bg-secondary text-on-secondary text-[8px] font-bold px-1 rounded-br">NEW</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed px-1.5 py-0.2 rounded font-semibold uppercase">Untried</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface truncate">Comfort Fabric Conditioner</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Morning Fresh Trial 50ml</span>
+<div class="flex items-baseline gap-spacing-xs mt-0.5">
+<span class="font-price-headline text-price-headline text-primary font-bold">₹19</span>
+<span class="font-price-strikethrough text-price-strikethrough text-on-surface-variant line-through">₹35</span>
+</div>
+</div>
+</div>
+<button class="flex-shrink-0 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container active:scale-95 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">add</span>
+  Add to Combo
+</button>
+</div>
+<div class="flex items-center gap-1.5 text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-body-sm text-body-sm font-medium">Try risk-free — 7-day easy returns on Home essentials, 100% Freshness Guarantee on Dairy &amp; Bread.</span>
+</div></div>
+<!-- "Before you checkout" Cross-Sell Row -->
+<div class="flex flex-col gap-spacing-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Before you checkout</h2>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Recommended</span>
+</div>
+<div class="flex gap-spacing-sm overflow-x-auto pb-spacing-xs -mx-margin-screen px-margin-screen">
+<!-- Item 1: Green Chilli -->
+<div class="flex flex-col w-32 flex-shrink-0 bg-surface-container-lowest p-spacing-sm rounded-xl shadow-[0_1px_6px_rgba(0,0,0,0.04)] justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-primary">timer</span>
+<span class="">8 MINS</span>
+</div>
+<div class="w-full h-20 rounded-lg bg-surface-container-low flex items-center justify-center p-1 my-1">
+<img class="w-full h-full object-contain" data-alt="Fresh vibrant green chillies piled neatly, bright culinary freshness, crisp stem details, food macro shot on seamless neutral light background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW0fppa6kBaj9uPgY3eWZ3pCNYHvrFB5pdtWEJdPTDvhxPx2U4LWTl_EY1FMjANcTH3UyKgrlmbVrPXiRaQWvE8bUy19oDoSKe6UQYFCg0JHEqq_YtaKZotIg4ldy98VJFOu3_St7ouTzsBkIx7vNlDbs66-UBJUSoNHea-MywiZaPMmDXAWSTGDrh-YEJ45Y63EvOkyH6ta_DNLNErPONH2_AM6YQPcjcN_VNPN-JBfCcjh4BU4r6">
+</div>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight line-clamp-2">Green Chilli (Hari Mirch)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100 g</span>
+</div>
+<div class="flex items-center justify-between mt-spacing-sm pt-spacing-xs">
+<span class="font-price-headline text-price-headline text-on-surface">₹23</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-xs hover:bg-primary/10" type="button">
+              ADD
+            </button>
+</div>
+</div>
+<!-- Item 2: Lady Finger -->
+<div class="flex flex-col w-32 flex-shrink-0 bg-surface-container-lowest p-spacing-sm rounded-xl shadow-[0_1px_6px_rgba(0,0,0,0.04)] justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-primary">timer</span>
+<span class="">8 MINS</span>
+</div>
+<div class="w-full h-20 rounded-lg bg-surface-container-low flex items-center justify-center p-1 my-1">
+<img class="w-full h-full object-contain" data-alt="Tender green fresh lady finger okra pods arranged diagonally, vivid healthy produce photography with studio softbox lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZYvUKhrlKQSs3GqxtXtYh6a__EYm6-qAjMYssro9cOu9vpi0_Z-bYrY4SQQtgNsKh81HX6WY3xaxTq-5jj7NkZNuO9fx_19GPl-qo0CB_LExqTtHxTVeioWHFBWbCKnQCunEavQcibqoEQROc0jF9teh5uFeob6gghO3DOdSHC9qo57xRVI7TFEQh8wMNfZkreJzr8JVv_aCOxdsW5SYCGyMCRem04JG6SAZVhRJtUunxGsQlSuJc">
+</div>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight line-clamp-2">Lady Finger (Bhindi)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">250 g</span>
+</div>
+<div class="flex items-center justify-between mt-spacing-sm pt-spacing-xs">
+<span class="font-price-headline text-price-headline text-on-surface">₹26</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-xs hover:bg-primary/10" type="button">
+              ADD
+            </button>
+</div>
+</div>
+<!-- Item 3: Coriander -->
+<div class="flex flex-col w-32 flex-shrink-0 bg-surface-container-lowest p-spacing-sm rounded-xl shadow-[0_1px_6px_rgba(0,0,0,0.04)] justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-primary">timer</span>
+<span class="">8 MINS</span>
+</div>
+<div class="w-full h-20 rounded-lg bg-surface-container-low flex items-center justify-center p-1 my-1">
+<img class="w-full h-full object-contain" data-alt="A lush bunch of fresh coriander leaves cilantro with root stems, fresh water dewdrops, bright organic herb photography on isolated white back" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHG3UFrkwQgdczXS7FR1hWv__pr5vIaEW5KNLBatpcehaBGMkMhOoVW6eyLJLz6nua4wfomziEBk1mFO7kEdgJUIgYvLQakI0Le8mJGSZDrup3S1a0CM1PeJJRqwhvaOJyC0Y7hfqnZD8eCRpIEHQEZy2uxOLwjYU8rmi0BxEby1-0taCugBPP7UycUevR08Nz8FuEFQg-rl37UYb7lHvRBQ6m7E0fjhTSIGnQsX4vGM5pG8C2WNW9">
+</div>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight line-clamp-2">Fresh Coriander</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100 g</span>
+</div>
+<div class="flex items-center justify-between mt-spacing-sm pt-spacing-xs">
+<span class="font-price-headline text-price-headline text-on-surface">₹9</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-xs hover:bg-primary/10" type="button">
+              ADD
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bill Details Card -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.04)] p-spacing-md gap-spacing-sm"><div class="flex items-center justify-between pb-1">
+<h3 class="font-title-md text-title-md text-on-surface">Bill details</h3>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/30 px-2 py-0.5 rounded-full font-semibold">Best Price Guaranteed</span>
+</div>
+<div class="flex flex-col gap-2 py-1">
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<span class="">Items total</span>
+<div class="flex items-center gap-1">
+<span class="line-through text-on-surface-variant/70 font-body-sm text-body-sm">₹125</span>
+<span class="text-on-surface font-semibold">₹117</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-1">
+<span class="">Delivery charge</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">info</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="line-through font-body-sm text-body-sm">₹15</span>
+<span class="text-primary font-semibold">FREE</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<span class="">Handling charge</span>
+<span class="text-on-surface">₹2</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-spacing-sm bg-surface-container-low/50 -mx-spacing-md -mb-spacing-md p-spacing-md rounded-b-xl">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Grand Total</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">You saved ₹8 on this order</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">₹119</span>
+</div></div>
+<!-- Cancellation Policy Note -->
+<div class="flex items-start gap-spacing-xs px-spacing-xs pb-spacing-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Review your address and items before paying. Deliveries are ultra-fast and unalterable once partner departs.
+      </p>
+</div>
+</div>
+<!-- Sticky Bottom Checkout CTA Bar -->
+<div class="sticky bottom-0 z-30 w-full bg-surface-container-lowest/95 backdrop-blur-md p-margin-screen shadow-[0_-4px_16px_rgba(0,0,0,0.06)] flex items-center justify-between gap-spacing-md">
+<div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Amount</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">₹119</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Saved ₹8</span>
+</div></div>
+<button class="flex-1 h-12 bg-primary rounded-xl text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(12,131,31,0.25)] hover:bg-primary-container active:scale-[0.98] transition-all" type="button">
+<span class="">Select Address &amp; Pay</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  // Micro-interactions for stepper feedback
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', function() {
+      if (this.textContent.trim() === 'ADD' || this.textContent.includes('Add to Combo')) {
+        this.classList.add('scale-95');
+        setTimeout(() => this.classList.remove('scale-95'), 120);
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_10px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-spacing-sm"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[22px]">electric_bolt</span><span class="font-label-sm text-label-sm mt-0.5">Delivery</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface" data-path="categories" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">Categories</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface" data-path="order-history" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Orders</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] relative text-primary font-label-md" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="font-label-sm text-label-sm mt-0.5">Cart</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface" data-path="print-store" href="#"><span class="material-symbols-outlined text-[22px]">print</span><span class="font-label-sm text-label-sm mt-0.5">Print</span></a></div></nav>
+
+</body></html>
