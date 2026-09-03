@@ -19,9 +19,14 @@ const bottomNavContainer = document.getElementById('bottom-nav-container');
 const scrollViewport = document.getElementById('screen-scroll-viewport');
 const dynamicIsland = document.getElementById('dynamicIsland');
 
-// Render dev preview bar
+// Render dev preview bar (hidden if clean=true)
+const isClean = window.location.search.includes('clean=true') || window.location.hash.includes('clean=true');
 if (devContainer) {
-  renderDevToolbar(devContainer);
+  if (isClean) {
+    devContainer.style.display = 'none';
+  } else {
+    renderDevToolbar(devContainer);
+  }
 }
 
 // Render bottom navigation

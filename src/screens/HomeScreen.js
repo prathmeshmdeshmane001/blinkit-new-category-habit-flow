@@ -464,6 +464,13 @@ export function renderHomeScreen(container) {
         }
       });
     });
+
+    if (router.params && router.params.openCombo) {
+      const combo = FEATURED_COMBOS.find(c => c.id === router.params.openCombo);
+      if (combo) {
+        setTimeout(() => openComboModal(combo, () => render()), 150);
+      }
+    }
   }
 
   const unsubscribe = cartStore.subscribe(() => {
